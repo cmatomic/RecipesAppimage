@@ -1,5 +1,5 @@
 app: Kodi
-binpatch: true
+union: true
 
 ingredients:
   packages:
