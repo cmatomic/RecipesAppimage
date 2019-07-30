@@ -1,5 +1,5 @@
 app: Kodi
-union: true
+binpatch: true
 
 ingredients:
   packages:
@@ -116,8 +116,6 @@ ingredients:
     - team-xbmc/xbmc-nightly
     - linux-schools/samba-latest
 script:
-  #- pip install --upgrade pip
-  #- pip install pyopenssl
   - cat > AppRun <<\EOF
   - #!/bin/bash
   - HERE=$(dirname $(readlink -f "${0}"))
@@ -135,4 +133,3 @@ script:
   - "${HERE}"/usr/bin/kodi$@
   - EOF
   - chmod a+x AppRun
-  #- mv ./usr/lib/x86_64-linux-gnu/samba/* ./usr/lib/x86_64-linux-gnu/
