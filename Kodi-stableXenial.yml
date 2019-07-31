@@ -113,7 +113,6 @@ ingredients:
     - deb http://archive.ubuntu.com/ubuntu/ xenial main universe
   ppas:
     - team-xbmc/ppa
-    - team-xbmc/xbmc-nightly
     - linux-schools/samba-latest
 script:
   - cat > AppRun <<\EOF
