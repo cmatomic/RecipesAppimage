@@ -20,3 +20,11 @@ rm /usr/share/metainfo/vlc.appdata.xml
 chmod +x vlc.wrapper
 mv vlc.wrapper /usr/bin
 mv vlc.appdata.xml /usr/share/metainfo
+cd ..
+wget https://github.com/AppImage/AppImageKit/releases/download/12/appimagetool-x86_64.AppImage
+chmod +x *.AppImage
+./appimagetool-x86_64.AppImage VlcPlayer-snap.AppDir
+mv VlcPlayer-snap.AppImage /out
+cd out
+chmod +x VlcPlayer-snap.AppImage
+
