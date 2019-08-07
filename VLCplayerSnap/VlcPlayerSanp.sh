@@ -3,8 +3,8 @@
 
 
 mkdir VLCsnapBuild
-mkdir out
 cd VLCsnapBuild
+mkdir out
 snap download vlc
 file-roller -h vlc_*
 mv vlc_* mv VlcPlayer-snap.AppDir
