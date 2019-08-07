@@ -4,11 +4,10 @@
 
 mkdir VLCsnapBuild
 cd VLCsnapBuild
-mkdir VlcPlayer-snap.AppDir
 mkdir out
 snap download vlc
 file-roller -h vlc_*
-mv vlc_* mv VlcPlayer-snap.AppDir
+mv vlc_*.snap mv VlcPlayer-snap.AppDir
 cd VlcPlayer-snap.AppDir
 wget https://raw.githubusercontent.com/cmatomic/RecipesAppimage/master/VLCplayerSnap/VlcSnapAppimage/AppRun
 wget https://raw.githubusercontent.com/cmatomic/RecipesAppimage/master/VLCplayerSnap/VlcSnapAppimage/vlc.desktop
