@@ -27,4 +27,3 @@ chmod +x *.AppImage
 mv VlcPlayer-snap.AppImage /out
 cd out
 chmod +x VlcPlayer-snap.AppImage
-
