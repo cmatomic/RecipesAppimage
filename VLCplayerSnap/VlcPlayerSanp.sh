@@ -1,5 +1,6 @@
 #!/bin/sh
-# run in Ubunu xenial 16.04
+# need Snapcraft
+# tested in Ubunu xenial 16.04
 
 
 mkdir VLCsnapBuild
@@ -20,7 +21,7 @@ wget https://raw.githubusercontent.com/cmatomic/RecipesAppimage/master/VLCplayer
 
 wget https://raw.githubusercontent.com/cmatomic/RecipesAppimage/master/VLCplayerSnap/VlcSnapAppimage/vlc.appdata.xml
 
-chmod +x AppRun Vlc*/
+chmod +x Vlc*/AppRun
 chmod +x vlc.wrapper
 mv -f vlc.wrapper Vlc*/usr/bin/
 mv -f vlc.appdata.xml Vlc*/usr/share/metainfo/
