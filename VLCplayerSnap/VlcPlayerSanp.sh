@@ -3,27 +3,33 @@
 
 
 mkdir VLCsnapBuild
+chmod 755 VLCsnapBuild
 cd VLCsnapBuild
 mkdir out
 snap download vlc
 file-roller -h vlc_*.snap
-mv vlc_*/ VlcPlayerSnap.AppDir/
-cd VlcPlayerSnap.AppDir
-wget https://raw.githubusercontent.com/cmatomic/RecipesAppimage/master/VLCplayerSnap/VlcSnapAppimage/AppRun
-wget https://raw.githubusercontent.com/cmatomic/RecipesAppimage/master/VLCplayerSnap/VlcSnapAppimage/vlc.desktop
-wget https://raw.githubusercontent.com/cmatomic/RecipesAppimage/master/VLCplayerSnap/VlcSnapAppimage/vlc.png
+mv vlc_*/ VlcPlayerSnap-x86_64.AppDir/
+
+wget  https://raw.githubusercontent.com/cmatomic/RecipesAppimage/master/VLCplayerSnap/VlcSnapAppimage/AppRun -P Vlc*
+
+wget https://raw.githubusercontent.com/cmatomic/RecipesAppimage/master/VLCplayerSnap/VlcSnapAppimage/vlc.desktop -P Vlc*
+
+wget https://raw.githubusercontent.com/cmatomic/RecipesAppimage/master/VLCplayerSnap/VlcSnapAppimage/vlc.png -P Vlc*
+
 wget https://raw.githubusercontent.com/cmatomic/RecipesAppimage/master/VLCplayerSnap/VlcSnapAppimage/vlc.wrapper
+
 wget https://raw.githubusercontent.com/cmatomic/RecipesAppimage/master/VLCplayerSnap/VlcSnapAppimage/vlc.appdata.xml
-chmod +x AppRun
-rm  /VLCsnapBuild/VlcPlayerSnap.AppDir/usr/bin/vlc.wrapper
-rm /VLCsnapBuild/VlcPlayerSnap.AppDir/usr/share/metainfo/vlc.appdata.xml
+
+chmod +x AppRun Vlc*/
 chmod +x vlc.wrapper
-mv vlc.wrapper/VLCsnapBuild/VlcPlayerSnap.AppDir/usr/bin/
-mv vlc.appdata.xml /VLCsnapBuild/VlcPlayerSnap.AppDir/usr/share/metainfo/
-cd ..
-wget https://github.com/AppImage/AppImageKit/releases/download/12/appimagetool-x86_64.AppImage
-chmod +x *.AppImage
-./appimagetool-x86_64.AppImage VlcPlayerSnap.AppDir
-mv VlcPlayerSnap.AppImage /out
+mv -f vlc.wrapper Vlc*/usr/bin/
+mv -f vlc.appdata.xml Vlc*/usr/share/metainfo/
+
+wget https://github.com/cmatomic/RecipesAppimage/raw/master/VLCplayerSnap/appimagetool
+
+chmod +x appimagetool
+./appimagetool --no-appstream VlcPlayerSnap-x86_64.AppDir
+mv VLC-x86_64.AppImage VlcPlayerSnap-x86_64.AppImage
+mv VlcPlayerSnap-x86_64.AppImage out/
 cd out
-chmod +x VlcPlayerSnap.AppImage
+chmod +x VlcPlayerSnap-x86_64.AppImage
