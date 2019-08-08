@@ -1,5 +1,5 @@
 #!/bin/sh
-# need Snapcraft,file-roller
+# need Snappy (package manager),file-roller
 # tested in Ubunu xenial 16.04
 
 mkdir VLCsnapBuild
