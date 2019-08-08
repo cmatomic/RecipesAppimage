@@ -1,7 +1,6 @@
 #!/bin/sh
-# need Snapcraft
+# need Snapcraft,file-roller
 # tested in Ubunu xenial 16.04
-
 
 mkdir VLCsnapBuild
 chmod 755 VLCsnapBuild
