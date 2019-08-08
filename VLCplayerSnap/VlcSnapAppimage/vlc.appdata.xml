@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Copyright 2016-2017 Jean-Baptiste Kempf CC-0 -->
 <component type="desktop">
-  <id>VlcPlayerSnap</id>
+  <id>VLC-x86_64</id>
   <launchable type="desktop-id">vlc.desktop</launchable>
   <metadata_license>CC0-1.0</metadata_license>
   <name>VLC</name>
