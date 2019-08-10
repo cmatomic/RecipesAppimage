@@ -4,7 +4,7 @@
   <id>VlcPlayerSnap-x86_64</id>
   <launchable type="desktop-id">vlc.desktop</launchable>
   <metadata_license>CC0-1.0</metadata_license>
-  <name>VLC</name>
+  <name>VlcPlayerSnap</name>
   <name xml:lang="zh_TW">VLC</name>
   <name xml:lang="zh_CN">VLC</name>
   <name xml:lang="wa">VLC</name>
