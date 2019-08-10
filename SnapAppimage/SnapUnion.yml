@@ -3,8 +3,6 @@ union: true
 ingredients:
   packages:
     - snapd
-    - squashfs-tools
-    - ubuntu-core-launcher
   dist: xenial
   sources:
     - deb http://archive.ubuntu.com/ubuntu/ xenial main
