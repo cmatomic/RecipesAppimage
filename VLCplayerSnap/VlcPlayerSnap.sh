@@ -36,7 +36,7 @@ chmod +x vlc.wrapper
 mv -f vlc.wrapper Vlc*/usr/bin/
 mv -f vlc.appdata.xml Vlc*/usr/share/metainfo/
 
-wget https://github.com/cmatomic/RecipesAppimage/raw/master/VLCplayerSnap/appimagetool
+wget https://raw.githubusercontent.com/AppImage/pkg2appimage/master/pkg2appimage
 
 chmod +x appimagetool
 
