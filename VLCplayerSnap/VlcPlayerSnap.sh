@@ -1,14 +1,25 @@
 #!/bin/sh
-# need Snappy (package manager),file-roller
-# tested in Ubunu xenial 16.04
+# VLC version import from snap ubuntu 
+# Script tested in Ubunu xenial 16.04
+# after running this script then you can go to the VLCsnapBuild/out folder and click on the generated Vlc appimage
+# 10-08-2019 "DDMMYY"
 
 mkdir VLCsnapBuild
 chmod 755 VLCsnapBuild
 cd VLCsnapBuild
 mkdir out
-snap download vlc
-file-roller -h vlc_*.snap
-mv vlc_*/ VlcPlayerSnap-x86_64.AppDir/
+
+wget https://raw.githubusercontent.com/cmatomic/RecipesAppimage/master/squashfs-tools/squashfs-toolsUnion.yml
+wget https://raw.githubusercontent.com/cmatomic/RecipesAppimage/master/SnapAppimage/SnapUnion.yml
+wget https://raw.githubusercontent.com/AppImage/pkg2appimage/master/pkg2appimage
+
+chmod +x pkg2appimage
+
+$here ./pkg2appimage squashfs-toolsUnion.yml
+$here ./pkg2appimage SnapUnion.yml
+$here ./out/Snap-*.AppImage download vlc
+$here ./out/squashfs-tools*.AppImage vlc_*.snap
+mv squashfs-root/ VlcPlayerSnap-x86_64.AppDir/
 
 wget  https://raw.githubusercontent.com/cmatomic/RecipesAppimage/master/VLCplayerSnap/VlcSnapAppimage/AppRun -P Vlc*
 
@@ -28,8 +39,9 @@ mv -f vlc.appdata.xml Vlc*/usr/share/metainfo/
 wget https://github.com/cmatomic/RecipesAppimage/raw/master/VLCplayerSnap/appimagetool
 
 chmod +x appimagetool
+
 ./appimagetool --no-appstream VlcPlayerSnap-x86_64.AppDir
-mv VLC-x86_64.AppImage VlcPlayerSnap-x86_64.AppImage
+mv VLC-*.AppImage VlcPlayerSnap-x86_64.AppImage
 mv VlcPlayerSnap-x86_64.AppImage out/
 cd out
-chmod +x VlcPlayerSnap-x86_64.AppImage
+chmod +x Vlc*.AppImage
