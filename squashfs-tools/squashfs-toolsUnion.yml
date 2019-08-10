@@ -19,5 +19,5 @@ script:
   - Terminal=true
   - EOF
   - cp ./usr/share/applications/squashfs-tools.desktop .
-  - wget -c "https://github.com/cmatomic/RecipesAppimage/raw/master/squashfs-tools/squashfs-tools.png" -O usr/share/icons/hicolor/256x256/apps/squashfs-tools.png
+  - wget -c "https://github.com/cmatomic/RecipesAppimage/raw/master/squashfs-tools/squashfs-tools.png" -O usr/share/icons/hicolor/256x256/apps/squashfs-tools.png 
   - cp usr/share/icons/hicolor/256x256/apps/squashfs-tools.png .
