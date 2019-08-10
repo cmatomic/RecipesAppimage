@@ -9,7 +9,7 @@ ingredients:
     - deb http://us.archive.ubuntu.com/ubuntu/ xenial-updates main restricted
 
 script:
-  - cat > usr/share/applications/squashfs-tools.desktop <<\EOF
+  - cat > squashfs-tools.desktop <<\EOF
   - [Desktop Entry]
   - Name=squashfs-tools
   - Exec=unsquashfs
