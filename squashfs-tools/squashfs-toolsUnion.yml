@@ -1,0 +1,23 @@
+app: squashfs-tools
+union: true
+ingredients:
+  packages:
+    - squashfs-tools
+  dist: xenial
+  sources:
+    - deb http://archive.ubuntu.com/ubuntu/ xenial main
+    - deb http://us.archive.ubuntu.com/ubuntu/ xenial-updates main restricted
+
+script:
+  - cat > usr/share/applications/snap.desktop <<\EOF
+  - [Desktop Entry]
+  - Name=squashfs-tools
+  - Exec=unsquashfs
+  - Icon=squashfs-tools.png
+  - Type=Application
+  - Categories=Development;
+  - Terminal=true
+  - EOF
+  - cp ./usr/share/applications/squashfs-tools.desktop .
+  - wget -c "https://github.com/cmatomic/RecipesAppimage/raw/master/squashfs-tools/squashfs-tools.png" -O usr/share/icons/hicolor/256x256/apps/squashfs-tools.png
+  - cp usr/share/icons/hicolor/256x256/apps/squashfs-tools.png .
