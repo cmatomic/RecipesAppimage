@@ -1,8 +1,14 @@
-#!/bin/sh
+#!/bin/bash
 # VLC version import from snap ubuntu 
 # Script tested in Ubunu xenial 16.04
-# after running this script then you can go to the VLCsnapBuild/out folder and click on the generated Vlc appimage
+# after running this script then you can go to the ~out\ folder and click on the generated Vlc appimage
 # 10-08-2019 "DDMMYY"
+
+read -p "Do not run this script with sudo or as root, if this is the normal user answer Y to continue:" -n 1 -r
+if [[ ! $REPLY =~ ^[Yy]$ ]]
+then
+    exit 1
+fi
 
 mkdir VLCsnapBuild
 chmod 755 VLCsnapBuild
@@ -42,6 +48,8 @@ chmod +x appimagetool
 
 ./appimagetool --no-appstream VlcPlayerSnap-x86_64.AppDir
 mv VLC-*.AppImage VlcPlayerSnap-x86_64.AppImage
-mv VlcPlayerSnap-x86_64.AppImage out/
-cd out
+mkdir ../out
+mv VlcPlayerSnap-x86_64.AppImage ../out
+ls -lh ../out/*.AppImage
+cd ../out
 chmod +x Vlc*.AppImage
