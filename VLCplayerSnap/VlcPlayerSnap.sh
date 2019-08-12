@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 # VLC version import from snap ubuntu 
 # Script tested in Ubunu xenial 16.04
 # after running this script then you can go to the ~out\ folder and click on the generated Vlc appimage
