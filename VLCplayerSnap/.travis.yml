@@ -12,7 +12,7 @@ after_success:
   - ./u.sh release/*
 
 script:
-  - docker run --rm -v $(pwd)/:/build/ -w /build/ nxos/nxos bash VlcPlayerSnapGIT.sh
+  - docker run -it nxos/nxos bash ./VlcPlayerSnapGIT.sh
 
 branches:
   except:
