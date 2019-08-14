@@ -12,7 +12,6 @@ ingredients:
   ppas:
     - stebbins/handbrake-releases
 script:
-  - wget https://github.com/cmatomic/RecipesAppimage/raw/master/handbrake/HandBrake.png
   - cat > HandBrake.desktop <<EOF
   - [Desktop Entry]
   - Name=HandBrake
