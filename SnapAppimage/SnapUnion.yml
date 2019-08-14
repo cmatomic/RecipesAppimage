@@ -7,6 +7,8 @@ ingredients:
   sources:
     - deb http://archive.ubuntu.com/ubuntu/ xenial main
     - deb http://us.archive.ubuntu.com/ubuntu/ xenial-updates main restricted
+  ppa:
+    - stebbins/handbrake-releases
 
 script:
   - cat > usr/share/applications/snap.desktop <<\EOF
