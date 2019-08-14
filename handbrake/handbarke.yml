@@ -1,4 +1,4 @@
-app: handbrake
+app: handbrake-gtk
 binpatch: true
 
 ingredients:
