@@ -1,10 +1,9 @@
-app: handbrake-gtk
+app: handbrake
 binpatch: true
 
 ingredients:
    packages: 
     - handbrake-gtk
-    - handbrake-cli
   dist: trusty
   sources:
     - deb http://archive.ubuntu.com/ubuntu/ trusty main universe
