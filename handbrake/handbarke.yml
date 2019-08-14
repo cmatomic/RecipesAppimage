@@ -1,17 +1,15 @@
-app: handbrake
+app: handbrake-gtk
 binpatch: true
 
 ingredients:
    packages: 
-    - handbrake
-  dist: xenial
+    - handbrake-gtk
+    - handbrake-cli
+  dist: trusty
   sources:
-    - deb http://archive.ubuntu.com/ubuntu/ xenial main universe
-    - deb http://ppa.launchpad.net/stebbins/handbrake-releases/ubuntu xenial main
-   exclude:
-     - handbrake_0.10.2+ds1-2build1
-#  ppas:
-#   - stebbins/handbrake-releases
+    - deb http://archive.ubuntu.com/ubuntu/ trusty main universe
+   ppas:
+    - stebbins/handbrake-releases
 script:
   - cat > HandBrake.desktop <<EOF
   - [Desktop Entry]
