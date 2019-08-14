@@ -12,4 +12,4 @@ https://github.com/HandBrake/HandBrake
 
 autobuild comand:
 
-" mkdir HandBrakeYML;cd mkdir HandBrake; wget https://raw.githubusercontent.com/cmatomic/RecipesAppimage/master/handbrake/handbarke.yml;wget https://raw.githubusercontent.com/AppImage/pkg2appimage/master/pkg2appimage; chmod +x pkg2appimage;pkg2appimage handbarke.yml"
+" mkdir HandBrakeYML;cd mkdir HandBrakeYML; wget https://raw.githubusercontent.com/cmatomic/RecipesAppimage/master/handbrake/handbarke.yml;wget https://raw.githubusercontent.com/AppImage/pkg2appimage/master/pkg2appimage; chmod +x pkg2appimage;pkg2appimage handbarke.yml"
