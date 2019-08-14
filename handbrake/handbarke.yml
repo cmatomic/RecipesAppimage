@@ -2,14 +2,14 @@ app: handbrake
 binpatch: true
 
 ingredients:
-   packages:
-    - handbrake-cli
-    - handbrake-gtk
+   packages: 
     - handbrake
   dist: xenial
   sources:
     - deb http://archive.ubuntu.com/ubuntu/ xenial main universe
     - deb http://ppa.launchpad.net/stebbins/handbrake-releases/ubuntu xenial main
+   exclude:
+     - handbrake-0.10.2+ds1-2build1
 #  ppas:
 #   - stebbins/handbrake-releases
 script:
