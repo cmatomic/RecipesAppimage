@@ -9,9 +9,9 @@ ingredients:
   dist: xenial
   sources:
     - deb http://archive.ubuntu.com/ubuntu/ xenial main universe
-    - deb http://archive.ubuntu.com/ubuntu/ xenial main restricted universe multiverse
-  ppas:
-    - stebbins/handbrake-releases
+    - deb http://ppa.launchpad.net/stebbins/handbrake-releases/ubuntu xenial main
+#  ppas:
+#   - stebbins/handbrake-releases
 script:
   - cat > HandBrake.desktop <<EOF
   - [Desktop Entry]
