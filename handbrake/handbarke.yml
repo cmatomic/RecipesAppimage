@@ -9,7 +9,7 @@ ingredients:
     - deb http://archive.ubuntu.com/ubuntu/ xenial main universe
     - deb http://ppa.launchpad.net/stebbins/handbrake-releases/ubuntu xenial main
    exclude:
-     - handbrake-0.10.2+ds1-2build1
+     - handbrake_0.10.2+ds1-2build1
 #  ppas:
 #   - stebbins/handbrake-releases
 script:
