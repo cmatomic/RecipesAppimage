@@ -7,8 +7,7 @@ ingredients:
   dist: trusty
   sources:
     - deb http://archive.ubuntu.com/ubuntu/ trusty main universe
-   ppas:
-    - stebbins/handbrake-releases
+    - deb http://ppa.launchpad.net/stebbins/handbrake-releases/ubuntu trusty main
 script:
   - cat > HandBrake.desktop <<EOF
   - [Desktop Entry]
