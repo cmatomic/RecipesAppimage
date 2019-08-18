@@ -13,4 +13,3 @@ tar xf *.tar.bz2
 make j4
 make install
 cd ..
-exit
