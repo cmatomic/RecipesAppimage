@@ -8,7 +8,7 @@ make j4
 sudo make install
 cd ..
 wget http://archive.ubuntu.com/ubuntu/pool/main/h/harfbuzz/harfbuzz_1.7.2.orig.tar.bz2
-tar xf *.tar.bz2
+tar -jxvf harfbuzz_1.7.2.orig.tar.bz2
 cd harfbuzz-1.7.2
 ./configure
 chmod +x autogen.sh
