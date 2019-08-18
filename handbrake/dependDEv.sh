@@ -5,11 +5,11 @@ tar xf *.tar.xz
 cd nasm-*
 ./configure
 make j4
-make install
+sudo make install
 cd ..
 wget http://archive.ubuntu.com/ubuntu/pool/main/h/harfbuzz/harfbuzz_1.7.2.orig.tar.bz2
 tar xf *.tar.bz2
 ./configure
-make j4
-make install
+./autogen.sh
+sudo make install
 cd ..
