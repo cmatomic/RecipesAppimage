@@ -11,5 +11,7 @@ wget http://archive.ubuntu.com/ubuntu/pool/main/h/harfbuzz/harfbuzz_1.7.2.orig.t
 tar xf *.tar.bz2
 ./configure
 ./autogen.sh
+cd build
+make
 sudo make install
 cd ..
