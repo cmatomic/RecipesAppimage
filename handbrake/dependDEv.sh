@@ -15,3 +15,11 @@ chmod +x autogen.sh
 ./autogen.sh
 sudo make install
 cd ..
+wget http://archive.ubuntu.com/ubuntu/pool/main/g/gtk+3.0/gtk+3.0_3.22.30.orig.tar.xz
+tar xf gtk+-3.22.30.tar.xz          # unpack the sources
+cd gtk+-3.22.30                     # change to the toplevel directory
+./configure                         # run the `configure' script
+make                                # build GTK+
+sudo make install                   # install GTK+
+cd ..
+
