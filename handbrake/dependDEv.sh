@@ -39,8 +39,8 @@ sudo make install
 cd ...
 
 wget http://archive.ubuntu.com/ubuntu/pool/main/g/gtk+3.0/gtk+3.0_3.22.30.orig.tar.xz
-tar xf gtk+3.0_3.22.30.orig.tar.xz  # unpack the sources
-cd gtk+-3.22.30                     # change to the toplevel directory
+tar xf gtk+3.0_3.22.30.orig.tar.xz  
+cd gtk+-3.22.30                    
 ./configure                         # run the `configure' script
 cd build                            
 make                                # build GTK+
