@@ -15,7 +15,7 @@ cd gobject-introspection-1.46.0
 ./configure                                                    
 make                                
 sudo make install 
-cd ../../
+cd ..
 
 wget http://archive.ubuntu.com/ubuntu/pool/main/a/atk1.0/atk1.0_2.18.0.orig.tar.xz
 tar xf atk1.0_2.18.0.orig.tar.xz
@@ -23,7 +23,7 @@ cd atk-2.18.0
 ./configure                                                   
 make                                
 sudo make install                   
-cd ../../
+cd ..
 
 wget http://archive.ubuntu.com/ubuntu/pool/main/p/pango1.0/pango1.0_1.38.1.orig.tar.xz
 tar xf pango1.0_1.38.1.orig.tar.xz
@@ -31,7 +31,7 @@ cd pango-1.38.1
 ./configure                                                     
 make                                
 sudo make install                   
-cd ../../
+cd ..
 
 wget http://archive.ubuntu.com/ubuntu/pool/main/c/cairo/cairo_1.14.6.orig.tar.xz
 tar xf cairo_1.14.6.orig.tar.xz
@@ -39,7 +39,7 @@ cd cairo-1.14.6
 ./configure                                                    
 make                                
 sudo make install                   
-cd ../../
+cd ..
 
 wget http://archive.ubuntu.com/ubuntu/pool/main/g/gdk-pixbuf/gdk-pixbuf_2.32.2.orig.tar.xz
 tar xf gdk-pixbuf_2.32.2.orig.tar.xz
@@ -47,7 +47,7 @@ cd gdk-pixbuf-2.32.2
 ./configure                                                     
 make                                
 sudo make install                   
-cd ../../
+cd ..
 
 wget http://archive.ubuntu.com/ubuntu/pool/main/g/gtk+3.0/gtk+3.0_3.22.30.orig.tar.xz
 tar xf gtk+3.0_3.22.30.orig.tar.xz  
@@ -55,7 +55,7 @@ cd gtk+-3.22.30
 ./configure                                                     
 make                                
 sudo make install                   
-cd ../../
+cd ..
 
 wget http://archive.ubuntu.com/ubuntu/pool/main/h/harfbuzz/harfbuzz_1.7.2.orig.tar.bz2
 tar -jxvf harfbuzz_1.7.2.orig.tar.bz2
