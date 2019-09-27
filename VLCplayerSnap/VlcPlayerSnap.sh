@@ -41,7 +41,7 @@ chmod +x Vlc*/AppRun
 chmod +x vlc.wrapper
 mv -f vlc.wrapper Vlc*/usr/bin/
 mv -f vlc.appdata.xml Vlc*/usr/share/metainfo/
-mv Vlc*/usr/lib/x86_64-linux-gnu/libgtk-3.so.0  Vlc*/usr/lib/x86_64-linux-gnu/libgtk-3.so.0.back 
+mv  Vlc*/usr/lib/x86_64-linux-gnu/libgtk-3.so.0  VlcPlayerSnap-x86_64.AppDir/usr/lib/x86_64-linux-gnu/libgtk-3.so.0.back
 
 wget https://github.com/cmatomic/RecipesAppimage/raw/master/VLCplayerSnap/appimagetool
 
