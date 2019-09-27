@@ -1,0 +1,15 @@
+#!/bin/sh
+HERE=$(dirname $(readlink -f "${0}"))
+sed -i -e 's|././|/usr|g' ./usr/lib/x86_64-linux-gnu/libgtk-3.so.0
+sed -i -e 's|././|/usr|g'./usr/lib64/libgtk-3.so.0
+export QT_DEBUG_PLUGINS=1
+export FONTCONFIG_PATH="$HERE/etc/fonts"
+export QT_QPA_PLATFORM_PLUGIN_PATH="$HERE/usr/lib/x86_64-linux-gnu/qt5/plugins"
+export PATH="$HERE/usr/sbin:$HERE/usr/bin:$HERE/sbin:$HERE/bin:$PATH"
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$HERE/lib:$HERE/usr/lib:$HERE/lib/x86_64-linux-gnu:$HERE/usr/lib/x86_64-linux-gnu"
+export LD_LIBRARY_PATH="$HERE/usr/lib/x86_64-linux-gnu/mesa:$HERE/usr/lib/x86_64-linux-gnu/mesa-egl:$LD_LIBRARY_PATH"
+export LD_LIBRARY_PATH="$HERE/lib/x86_64-linux-gnu:$HERE/usr/lib:$HERE/usr/lib/vlc:$HERE/usr/lib/x86_64-linux-gnu:$HERE/usr/lib/x86_64-linux-gnu/mesa:$HERE/usr/lib/x86_64-linux-gnu/mesa-egl:$HERE/usr/lib/x86_64-linux-gnu/pulseaudio:$HERE/usr/lib/x86_64-linux-gnu/samba:$LD_LIBRARY_PATH"
+export LD_LIBRARY_PATH=$HERE_LIBRARY_PATH:$LD_LIBRARY_PATH
+exec "desktop-launch" "$HERE/bin/vlc-snap-wrapper.sh" "$@"
+EXEC=$(grep -e '^Exec=.*' "${HERE}"/*.desktop | head -n 1 | cut -d "=" -f 2- | sed -e 's|%.||g')
+exec ${EXEC} $@
