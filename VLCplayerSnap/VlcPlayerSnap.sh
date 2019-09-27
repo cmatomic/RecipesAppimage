@@ -1,8 +1,8 @@
 #!/bin/bash
 # VLC version import from snap ubuntu 
-# Script tested in Ubunu xenial 16.04
+# Script tested in Ubunu xenial 16.04 and Debian 10 (buster)
 # after running this script then you can go to the ~out\ folder and click on the generated Vlc appimage
-# 10-08-2019 "DDMMYY"
+# 27-09-2019 "DDMMYYY"
 
 read -p "Do not run this script with sudo or as root, if this is the normal user answer Y to continue:" -n 1 -r
 if [[ ! $REPLY =~ ^[Yy]$ ]]
@@ -41,6 +41,7 @@ chmod +x Vlc*/AppRun
 chmod +x vlc.wrapper
 mv -f vlc.wrapper Vlc*/usr/bin/
 mv -f vlc.appdata.xml Vlc*/usr/share/metainfo/
+mv Vlc*/usr/lib/x86_64-linux-gnu/libgtk-3.so.0  Vlc*/usr/lib/x86_64-linux-gnu/libgtk-3.so.0.back 
 
 wget https://github.com/cmatomic/RecipesAppimage/raw/master/VLCplayerSnap/appimagetool
 
