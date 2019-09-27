@@ -1,5 +1,6 @@
 #!/bin/sh
 HERE=$(dirname $(readlink -f "${0}"))
+sed -i -e 's|././|/usr|g' ./usr/lib/x86_64-linux-gnu/libgtk-3.so.0
 export QT_DEBUG_PLUGINS=1
 export FONTCONFIG_PATH="$HERE/etc/fonts"
 export QT_QPA_PLATFORM_PLUGIN_PATH="$HERE/usr/lib/x86_64-linux-gnu/qt5/plugins"
