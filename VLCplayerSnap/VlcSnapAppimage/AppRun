@@ -31,6 +31,5 @@ export LD_LIBRARY_PATH="${HERE}"/usr/sbin:"${HERE}"/usr/bin/:"${HERE}"/sbin/:"${
 export LD_LIBRARY_PATH="${HERE}"/usr/lib/x86_64-linux-gnu/mesa:"${HERE}"/usr/lib/x86_64-linux-gnu/mesa-egl/:"${LD_LIBRARY_PATH}"
 export LD_LIBRARY_PATH="${HERE}"/lib/x86_64-linux-gnu/:"${HERE}"/usr/lib:"${HERE}"/usr/lib/vlc/:"${HERE}"/usr/lib/x86_64-linux-gnu:"${HERE}"/usr/lib/x86_64-linux-gnu/mesa:"${HERE}"/usr/lib/x86_64-linux-gnu/mesa-egl/:"${HERE}"/usr/lib/x86_64-linux-gnu/pulseaudio/:"${HERE}"/usr/lib/x86_64-linux-gnu/samba/:"${LD_LIBRARY_PATH}"
 export LD_LIBRARY_PATH="${HERE}"_LIBRARY_PATH:$LD_LIBRARY_PATH
-#exec "desktop-launch" "${HERE}"/bin/vlc-snap-wrapper.sh" "$@"
 EXEC=$(grep -e '^Exec=.*' "${HERE}"/*.desktop | head -n 1 | cut -d "=" -f 2- | sed -e 's|%.||g')
 exec ${EXEC} $@
