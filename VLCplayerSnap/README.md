@@ -10,9 +10,9 @@ In some distros it is necessary to install  "wget" "fuse" "APT" "appstream" "gcc
 
 VLC player beta 
 
-mkdir VLCscript;cd VLCscript;wget https://raw.githubusercontent.com/cmatomic/RecipesAppimage/master/VLCplayerSnap/VlcPlayerBetaSnap.sh;chmod +x Vlc*.sh;./Vlc*.sh "
+" mkdir VLCscript;cd VLCscript;wget https://raw.githubusercontent.com/cmatomic/RecipesAppimage/master/VLCplayerSnap/VlcPlayerBetaSnap.sh;chmod +x Vlc*.sh;./Vlc*.sh  "
 
 
 VLC player Edge
 
-mkdir VLCscript;cd VLCscript;wget https://raw.githubusercontent.com/cmatomic/RecipesAppimage/master/VLCplayerSnap/VlcPlayervlcEdgeSnap.sh;chmod +x Vlc*.sh;./Vlc*.sh "
+" mkdir VLCscript;cd VLCscript;wget https://raw.githubusercontent.com/cmatomic/RecipesAppimage/master/VLCplayerSnap/VlcPlayervlcEdgeSnap.sh;chmod +x Vlc*.sh;./Vlc*.sh  "
