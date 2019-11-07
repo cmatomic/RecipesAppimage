@@ -1,4 +1,5 @@
 #!/bin/bash
+# for docker
 apt update
 apt install nano
 apt install python-software-properties software-properties-common
