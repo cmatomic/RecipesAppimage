@@ -55,7 +55,7 @@ pip3 install meson
   wget https://download.handbrake.fr/releases/$HDBK/HandBrake-$HDBK-source.tar.bz2
   tar xfv HandBrake-*
   cd HandBrake-*
-  ./configure --launch-jobs=$(nproc) --launch --build="build" --prefix=/usr --enable-fdk-aac  --enable-x265 --debug --arch=x86_64
+  ./configure --launch-jobs=$(nproc) --launch --build="build" --prefix=/usr --enable-fdk-aac  --enable-x265 --arch=x86_64
   make --directory=build install
  
 )
