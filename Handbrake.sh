@@ -12,7 +12,7 @@ pip3 install meson
 (
   wget https://www.nasm.us/pub/nasm/releasebuilds/$NASM/nasm-$NASM.tar.gz
   tar xvf nasm-*
-  cd nas-*
+  cd nasm-*
   #./autogen.sh
   ./configure --prefix=/usr 
   make -j$(nproc)
