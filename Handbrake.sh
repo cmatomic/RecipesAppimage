@@ -21,6 +21,7 @@ pip3 install meson
 
 (
   wget https://ftp.gnu.org/pub/gnu/gettext/gettext-$GTTEXT.tar.gz
+  tar xvf gettext-*
   cd gettext-*
   ./autogen.sh 
   ./configure --prefix=/usr 
