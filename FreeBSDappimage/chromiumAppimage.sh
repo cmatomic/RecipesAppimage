@@ -13,6 +13,7 @@ cd chromium.AppImage
 
  cat > AppRun <<\EOF
 #!/bin/sh
+HERE=$(dirname $(readlink -f "${0}"))
 export LD_PRELOAD="${HERE}/usr/local/lib/alsa-lib/libasound_module_pcm_oss.so"
 
 export GDK_PIXBUF_MODULEDIR="${HERE}/usr/local/lib/gdk-pixbuf-2.0/loaders"
