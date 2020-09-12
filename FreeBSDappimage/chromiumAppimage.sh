@@ -1,11 +1,13 @@
 #!/bin/sh
 #change the name nomad for your user name .
 USER=nomad
+GROUP=nomad
+#GROUP=operator
 
 mkdir FreeBSDappimage
 cd FreeBSDappimage
 sudo pkg fetch  -d -o . chromium-84.0.4147.135
-sudo chown -R $USER:$USER All/
+sudo chown -R $USER:$GROUP All/
 cd All
 mkdir chromium.AppImage
 ls *.txz | xargs -n1 tar  -C  "chromium.AppImage" -xzvf
