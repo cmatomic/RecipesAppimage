@@ -56,5 +56,4 @@ chmod a+x $VERSION.AppImage
 mv $VERSION.AppImage ./out
 
 #This script is just a demonstration to generate an appimage on FreeBSD and FreeBSD variants the end result does not generate a functional appimage, but it can run directly in the chromium.AppDir folder  " ./AppRun "  .
-#LGPLv2.0
 
