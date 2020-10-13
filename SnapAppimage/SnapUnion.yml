@@ -14,11 +14,11 @@ script:
   - [Desktop Entry]
   - Name=Snap
   - Exec=snap
-  - Icon=Snapy
+  - Icon=Snapy.png
   - Type=Application
   - Categories=Development;
   - Terminal=true
   - EOF
   - cp ./usr/share/applications/snap.desktop .
-  - wget -c "https://github.com/cmatomic/RecipesAppimage/raw/master/SnapAppimage/Snapy.png" .
-  #- cp usr/share/icons/hicolor/256x256/apps/Snapy.png .
+  - wget -c "https://github.com/cmatomic/RecipesAppimage/raw/master/SnapAppimage/Snapy.png" -O usr/share/icons/hicolor/256x256/apps/Snapy.png
+  - cp usr/share/icons/hicolor/256x256/apps/Snapy.png .
