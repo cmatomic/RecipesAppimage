@@ -23,7 +23,7 @@ chmod +x pkg2appimage
 
 $here ./pkg2appimage squashfs-toolsUnion.yml
 $here ./pkg2appimage SnapUnion.yml
-$here ./out/Snap-*.AppImage download vlc --beta
+$here ./out/snap-*.AppImage download vlc --beta
 $here ./out/squashfs-tools*.AppImage vlc_*.snap
 mv squashfs-root/ VlcPlayerSnap-x86_64.AppDir/
 mv Vlc*/usr/lib/x86_64-linux-gnu/libgtk-3.so.0  VlcPlayerSnap-x86_64.AppDir/usr/lib/x86_64-linux-gnu/libgtk-3.so.0.back
