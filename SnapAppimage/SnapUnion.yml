@@ -7,20 +7,17 @@ ingredients:
   sources:
     - deb http://archive.ubuntu.com/ubuntu/ xenial main
     - deb http://us.archive.ubuntu.com/ubuntu/ xenial-updates main restricted
-  ppa:
 
 script:
   - cat > usr/share/applications/snap.desktop <<\EOF
   - [Desktop Entry]
-  - Name=Snap
+  - Name=snap
   - Exec=snap
   - Icon=snap.png
   - Type=Application
   - Categories=Development;
   - Terminal=true
   - EOF
-  - cp ./usr/share/applications/snap.desktop .
-  - wget https://github.com/cmatomic/RecipesAppimage/raw/master/SnapAppimage/snap.png
-  - cp snap.png ./usr/share/icons/hicolor/256x256/apps/
-  #- wget -c "https://github.com/cmatomic/RecipesAppimage/raw/master/SnapAppimage/snap.png" -O ./usr/share/icons/hicolor/256x256/apps/snap.png
-  #- cp ./usr/share/icons/hicolor/256x256/apps/snap.png .
+  #- cp ./usr/share/applications/snap.desktop .
+  - wget -c "https://github.com/cmatomic/RecipesAppimage/raw/master/SnapAppimage/snap.png" -O  usr/share/icons/hicolor/256x256/apps/snap.png
+  - cp  usr/share/icons/hicolor/256x256/apps/snap.png .
