@@ -20,7 +20,7 @@ script:
   - Terminal=true
   - EOF
   - cp ./usr/share/applications/snap.desktop .
-  - wget https://github.com/cmatomic/RecipesAppimage/raw/master/SnapAppimage/snap.png
+  - wget https://github.com/cmatomic/RecipesAppimage/raw/master/SnapAppimage/
   - cp snap.png ./usr/share/icons/hicolor/256x256/apps/snap.png
   #- wget -c "https://github.com/cmatomic/RecipesAppimage/raw/master/SnapAppimage/snap.png" -O ./usr/share/icons/hicolor/256x256/apps/snap.png
   #- cp ./usr/share/icons/hicolor/256x256/apps/snap.png .
