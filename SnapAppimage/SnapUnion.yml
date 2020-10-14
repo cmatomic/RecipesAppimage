@@ -2,8 +2,10 @@ app: snapd
 union: true
 ingredients:
   packages:
-    - snapd
+    #- snapd
   dist: xenial
+script:
+    - wget http://pt.archive.ubuntu.com/ubuntu/pool/main/s/snapd/snapd_2.46.1_amd64.deb
   sources:
     - deb http://archive.ubuntu.com/ubuntu/ xenial main
     - deb http://pt.archive.ubuntu.com/ubuntu/ xenial-updates main restricted
