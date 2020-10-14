@@ -9,7 +9,7 @@ ingredients:
     - deb http://us.archive.ubuntu.com/ubuntu/ xenial-updates main restricted
 
 script:
-  - cat > usr/share/applications/snap.desktop <<\EOF
+  - cat >snap.desktop <<\EOF
   - [Desktop Entry]
   - Name=snap
   - Exec=snap
