@@ -17,7 +17,7 @@ chmod +x pkg2appimage
 
 $here ./pkg2appimage squashfs-toolsUnion.yml
 $here ./pkg2appimage SnapUnion.yml
-$here ./out/Snap-*.AppImage download vlc
+$here ./out/snap-*.AppImage download vlc
 $here ./out/squashfs-tools*.AppImage vlc_*.snap
 mv squashfs-root/ VlcPlayerSnap-x86_64.AppDir/
 
