@@ -6,7 +6,7 @@ ingredients:
   dist: xenial
   sources:
     - deb http://archive.ubuntu.com/ubuntu/ xenial main
-    - deb http://us.archive.ubuntu.com/ubuntu/ xenial-updates main restricted
+    - deb http://pt.archive.ubuntu.com/ubuntu/ xenial-updates main restricted
 
 script:
   - cat >snap.desktop <<\EOF
