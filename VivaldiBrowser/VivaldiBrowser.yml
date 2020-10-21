@@ -22,6 +22,6 @@ script:
   - "${HERE}"/opt/vivaldi/vivaldi$@
   - EOF
   - chmod a+x AppRun
-  - cp ./opt/vivaldi/product_logo_256_dev.png ./usr/share/icons/hicolor/256x256/
+  - cp ./opt/vivaldi/product_logo_256.png ./usr/share/icons/hicolor/256x256/
   - mv ./usr/share/icons/hicolor/256x256/product_logo_256_dev.png ./usr/share/icons/hicolor/256x256/vivaldi-stable.png
   - cp ./usr/share/icons/hicolor/256x256/vivaldi-stable.png .
