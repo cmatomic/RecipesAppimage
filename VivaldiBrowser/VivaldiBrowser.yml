@@ -23,5 +23,5 @@ script:
   - EOF
   - chmod a+x AppRun
   - cp ./opt/vivaldi/product_logo_256.png ./usr/share/icons/hicolor/256x256/
-  - mv ./usr/share/icons/hicolor/256x256/product_logo_256.png ./usr/share/icons/hicolor/256x256/vivaldi-stable.png
-  - cp ./usr/share/icons/hicolor/256x256/vivaldi-stable.png .
+  - mv ./usr/share/icons/hicolor/256x256/product_logo_256.png ./usr/share/icons/hicolor/256x256/vivaldi.png
+  - cp ./usr/share/icons/hicolor/256x256/vivaldi.png .
