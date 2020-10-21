@@ -1,7 +1,7 @@
 ### Unofficial AppImage Microsoft Edge for GNU/Linux
 * Script compatible  with distributions based on Debian
 
-This sequence of commands will download the necessary files and execute them to generate the Microsoft Edge appimage, then you can access the buildMicrosoftEdge / out folder and click on the generated appimage.
+This sequence of commands will download the necessary files and execute them to generate the Unofficial Edge Browser appimage, then you can access the buildMicrosoftEdge / out folder and click on the generated appimage.
 
 * ### Microsoft Edge Dev 
 ```
