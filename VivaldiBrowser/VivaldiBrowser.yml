@@ -6,7 +6,7 @@ ingredients:
   sources:
     - deb "http://archive.ubuntu.com/ubuntu/  xenial main universe"
   script:
-    - DEB=$(wget -q "https://downloads.vivaldi.com/stable/" -O - | grep amd64.deb| cut -d '' -f 4)
+    - DEB=$(wget -q "https://downloads.vivaldi.com/stable/" -O - | grep amd64.deb| cut -d '"' -f 4)
     - wget -c "$DEB"
 script:
   - cat > AppRun <<\EOF
