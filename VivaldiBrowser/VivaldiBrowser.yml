@@ -7,8 +7,8 @@ ingredients:
   sources:
     - deb "http://archive.ubuntu.com/ubuntu/  xenial main universe"
   script:
-    #-  wget -U firefox -r -nd --no-parent -A 'vivaldi-stable_3.*_amd64.deb' https://downloads.vivaldi.com/stable/
-   -   wget 'https://downloads.vivaldi.com/stable/vivaldi-stable_3.4.2066.76-1_amd64.deb'
+    - DEB=$(wget -q "https://vivaldi.com/download/" -O - | grep amd64.deb | cut -d '"' -f 4)
+    - wget -c "$DEB"
 script:
   - cat > AppRun <<\EOF
   - #!/bin/bash
