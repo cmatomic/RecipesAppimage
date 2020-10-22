@@ -1,6 +1,5 @@
 app: vivaldi-stable
 binpatch: true
-https://downloads.vivaldi.com/stable/
 ingredients:
    packages: 
   dist:  xenial
