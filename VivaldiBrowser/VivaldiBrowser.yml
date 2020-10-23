@@ -6,6 +6,7 @@ ingredients:
   sources:
     - deb "http://archive.ubuntu.com/ubuntu/  xenial main universe"
   script:
+    - wget "https://downloads.vivaldi.com/stable/vivaldi-stable_3.4.2066.86-1_amd64.deb"
     #- DEB=$(wget -q "https://downloads.vivaldi.com/stable/" -O - | grep amd64.deb| cut -d '"' -f 4)
     #- wget -c "$DEB"
 script:
