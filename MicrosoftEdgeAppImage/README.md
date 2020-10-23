@@ -1,6 +1,7 @@
 ### Unofficial AppImage Microsoft Edge for GNU/Linux
 * Script compatible  with distributions based on Debian
-
+* To run on Fedora based distributions you need the following packages, dpkg ; binutils .
+  
 This sequence of commands will download the necessary files and execute them to generate the Unofficial Edge Browser AppImage, then you can access the buildMicrosoftEdge / out folder and click on the generated appimage.
 
 * ### Microsoft Edge Dev 
