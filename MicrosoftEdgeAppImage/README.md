@@ -1,7 +1,7 @@
 ### Unofficial AppImage Microsoft Edge for GNU/Linux
 
   
-ApImage can only be generated on ubutuntu xenial
+ApImage can only be generated on ubuntu xenial
 
 * ### Microsoft Edge Dev 
 ```
