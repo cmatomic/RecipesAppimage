@@ -1,6 +1,5 @@
 ### Unofficial AppImage vivaldi-stable 64 bits
-* Script compatible  with distributions based on Debian
-
+* ApImage can only be generated on ubutuntu xennial
 This sequence of commands will download the necessary files and execute them to generate the Unofficial vivaldi-stable , then you can access the buildvivaldiStable / out folder and click on the generated appimage.
 
 * ### vivaldi-stable 64 bits 
