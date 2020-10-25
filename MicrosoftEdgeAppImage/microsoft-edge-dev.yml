@@ -18,7 +18,7 @@ script:
   - export LD_LIBRARY_PATH="$HERE/lib/x86_64-linux-gnu:$HERE/usr/lib:$HERE/usr/lib/x86_64-linux-gnu:$HERE/usr/lib/x86_64-linux-gnu/mesa:$HERE/usr/lib/x86_64-linux-gnu/mesa-egl:$HERE/usr/lib/x86_64-linux-gnu/pulseaudio:$HERE/usr/lib/x86_64-linux-gnu/samba:$LD_LIBRARY_PATH"
   - export LD_LIBRARY_PATH="$HERE/usr/local/samba/bin/:/usr/local/samba/sbin/:$LD_LIBRARY_PATH"
   - export LD_LIBRARY_PATH=$HERE_LIBRARY_PATH:$LD_LIBRARY_PATH
-  - "${HERE}"/opt/microsoft/msedge-dev/microsoft-edge-dev$@
+  - "${HERE}"/opt/microsoft/msedge-dev/microsoft-edge-dev $@
   - EOF
   - chmod a+x AppRun
   - cp ./opt/microsoft/msedge-dev/product_logo_256_dev.png ./usr/share/icons/hicolor/256x256/
