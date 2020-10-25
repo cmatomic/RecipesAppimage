@@ -11,7 +11,7 @@
  ¹ dependencies:
  dpkg ; dpkg-deb ; wget ; grep ; sed ;  binutils ; imagemagick
   
-  ¹(this dependencies is need for  generate the AppImage )
+     ¹(this dependencies is need for  generate the AppImage )
  
  This sequence of commands will download the necessary files and execute them to generate the Unofficial Edge Browser AppImage, then you can access the  buildMicrosoftEdge / out folder and click on the generated appimage.
  
