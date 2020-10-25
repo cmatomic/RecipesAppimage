@@ -1,10 +1,9 @@
 ### Unofficial AppImage Microsoft Edge for GNU/Linux
 
-  
- This ApImage can only be generated on ubuntu xenial
+ * Script compatible with distributions based on Debian
 
 * ### Microsoft Edge Dev 
 ```
-mkdir buildMicrosoftEdge;cd buildMicrosoftEdge;wget https://raw.githubusercontent.com/AppImage/AppImages/master/pkg2appimage; mv pkg2appimage pkg2appimage.sh;chmod +x pkg2appimage.sh;wget https://raw.githubusercontent.com/cmatomic/RecipesAppimage/master/MicrosoftEdgeAppImage/microsoft-edge-dev.yml;ARCH=x86_64 ./pkg2appimage.sh microsoft-edge-dev.yml
+mkdir buildMicrosoftEdge;cd buildMicrosoftEdge;wget -q -c https://github.com/$(wget -q https://github.com/AppImage/pkg2appimage/releases -O - | grep "pkg2appimage-.*-x86_64.AppImage" | head -n 1 | cut -d '"' -f 2);chmod +x pkg2appimage-*-x86_64.AppImage ;wget https://raw.githubusercontent.com/cmatomic/RecipesAppimage/master/MicrosoftEdgeAppImage/microsoft-edge-dev.yml;ARCH=x86_64 ./pkg2appimage-*-x86_64.AppImage microsoft-edge-dev.yml
 
 ```
