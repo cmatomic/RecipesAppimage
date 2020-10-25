@@ -5,7 +5,7 @@
    
  * For distributions based on Fedora
  ¹ dependencies:
- ,dpkg ; binutils ; imagemagick  .
+  dpkg ; binutils ; imagemagick  .
  
  * other distributions
  ¹ dependencies:
