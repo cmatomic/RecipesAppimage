@@ -16,7 +16,7 @@
 
 * ### vivaldi-stable 64 bits 
 ```
-mkdir buildvivaldiStable;cd buildvivaldiStable;wget -q -c https://github.com/$(wget -q https://github.com/AppImage/pkg2appimage/releases -O - | grep "pkg2appimage-.*-x86_64.AppImage" | head -n 1 | cut -d '"' -f 2);chmod +x pkg2appimage-*-x86_64.AppImage;wget https://github.com/cmatomic/pkg2appimage/blob/master/recipes/Vivaldi.yml;./pkg2appimage-*-x86_64.AppImage Vivaldi.yml
+mkdir buildvivaldiStable;cd buildvivaldiStable;wget -q -c https://github.com/$(wget -q https://github.com/AppImage/pkg2appimage/releases -O - | grep "pkg2appimage-.*-x86_64.AppImage" | head -n 1 | cut -d '"' -f 2);chmod +x pkg2appimage-*-x86_64.AppImage;wget https://raw.githubusercontent.com/cmatomic/pkg2appimage/master/recipes/Vivaldi.yml;./pkg2appimage-*-x86_64.AppImage Vivaldi.yml
 ```
 * ###  Firejail vivaldi-stable
 to sandbox a AppImage install Firejail 
