@@ -18,7 +18,7 @@
  
 * ### Microsoft Edge Dev 
 ```
-mkdir buildMicrosoftEdge;cd buildMicrosoftEdge;wget -q -c https://github.com/$(wget -q https://github.com/AppImage/pkg2appimage/releases -O - | grep "pkg2appimage-.*-x86_64.AppImage" | head -n 1 | cut -d '"' -f 2);chmod +x pkg2appimage-*-x86_64.AppImage ;wget https://raw.githubusercontent.com/cmatomic/RecipesAppimage/master/MicrosoftEdgeAppImage/microsoft-edge-dev.yml;ARCH=x86_64 ./pkg2appimage-*-x86_64.AppImage microsoft-edge-dev.yml
+mkdir buildMicrosoftEdge;cd buildMicrosoftEdge;wget -q -c https://github.com/$(wget -q https://github.com/AppImage/pkg2appimage/releases -O - | grep "pkg2appimage-.*-x86_64.AppImage" | head -n 1 | cut -d '"' -f 2);chmod +x pkg2appimage-*-x86_64.AppImage ;wget https://raw.githubusercontent.com/AppImage/pkg2appimage/d63337481fc8c3d6d916d5fbcb3abb71c1547e22/recipes/Edge.yml;ARCH=x86_64 ./pkg2appimage-*-x86_64.AppImage microsoft-edge-dev.yml
 
 ```
 
