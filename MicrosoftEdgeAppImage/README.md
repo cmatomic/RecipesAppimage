@@ -23,4 +23,10 @@ mkdir buildMicrosoftEdge;cd buildMicrosoftEdge;wget -q -c https://github.com/$(w
 ```
 
 
-* ###  Firejail Microsoft Edge Dev 
+* ###  Firejail Microsoft Edge Dev
+to sandbox a AppImage install Firejail 
+https://firejail.wordpress.com/
+
+```
+firejail --appimage --private ./Microsoft_Edge_\(dev\)-*-x86_64.AppImage --no-sandbox
+```
