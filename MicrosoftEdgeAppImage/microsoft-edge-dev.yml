@@ -12,15 +12,16 @@ script:
   - cat > AppRun <<\EOF
   - #!/bin/bash
   - HERE=$(dirname $(readlink -f "${0}"))
-  - export PATH="$HERE/usr/sbin:$HERE/usr/bin:$HERE/sbin:$HERE/bin:$PATH"
+  - export LD_LIBRARY_PATH="$HERE/usr/sbin:$HERE/usr/bin:$HERE/sbin:$HERE/bin:$PATH"
   - export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$HERE/lib:$HERE/usr/lib:$HERE/lib/x86_64-linux-gnu:$HERE/usr/lib/x86_64-linux-gnu"
   - export LD_LIBRARY_PATH="$HERE/usr/lib/x86_64-linux-gnu/mesa:$HERE/usr/lib/x86_64-linux-gnu/mesa-egl:$LD_LIBRARY_PATH"
   - export LD_LIBRARY_PATH="$HERE/lib/x86_64-linux-gnu:$HERE/usr/lib:$HERE/usr/lib/x86_64-linux-gnu:$HERE/usr/lib/x86_64-linux-gnu/mesa:$HERE/usr/lib/x86_64-linux-gnu/mesa-egl:$HERE/usr/lib/x86_64-linux-gnu/pulseaudio:$HERE/usr/lib/x86_64-linux-gnu/samba:$LD_LIBRARY_PATH"
-  - export LD_LIBRARY_PATH="$HERE/usr/local/samba/bin/:/usr/local/samba/sbin/:$LD_LIBRARY_PATH"
   - export LD_LIBRARY_PATH=$HERE_LIBRARY_PATH:$LD_LIBRARY_PATH
-  - "${HERE}"/opt/microsoft/msedge-dev/microsoft-edge-dev $@
+  - "${HERE}"/opt/microsoft/msedge-dev/microsoft-edge-dev --password-store=basic $@
   - EOF
   - chmod a+x AppRun
   - cp ./opt/microsoft/msedge-dev/product_logo_256_dev.png ./usr/share/icons/hicolor/256x256/
   - mv ./usr/share/icons/hicolor/256x256/product_logo_256_dev.png ./usr/share/icons/hicolor/256x256/microsoft-edge-dev.png
   - cp ./usr/share/icons/hicolor/256x256/microsoft-edge-dev.png .
+  - cp usr/share/applications/microsoft-edge-dev.desktop .
+  - sed -i -e 's|/usr/bin/ms-edge-dev %U|AppRun|g' microsoft-edge-dev.desktop
