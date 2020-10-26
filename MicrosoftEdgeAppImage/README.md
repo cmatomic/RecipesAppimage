@@ -1,7 +1,7 @@
 ### Unofficial AppImage Microsoft Edge for GNU/Linux
 
  * Script compatible with distributions based on Debian
-  ¹ dependencies: binutils ; imagemagick
+  ¹ dependencies: wegt ; binutils ; imagemagick
    
  * For distributions based on Fedora
  ¹ dependencies:
