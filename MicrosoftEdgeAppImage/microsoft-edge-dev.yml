@@ -7,7 +7,9 @@ ingredients:
   sources:
     - deb "http://archive.ubuntu.com/ubuntu/  xenial main universe"
   script:
-    -  wget -r -nd --no-parent -A 'microsoft-edge-dev_*_amd64.deb' https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-dev/
+    #-  wget -r -nd --no-parent -A 'microsoft-edge-dev_*_amd64.deb' https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-dev/
+    - DLD=$(wget -q "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-dev/" -O - | grep deb | tail -n 1 | cut -d '"' -f 2)
+    - wget -c "https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-dev/$DLD"
 script:
   - cat > AppRun <<\EOF
   - #!/bin/bash
